@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>social media website design -linkedIn</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+<div class="navbar-left">
+<a href="index.html" class="logo"><img src="images/logo.png"></a>
+<div class="search-box">
+<img src="images/search.png">
+<input type="text" placeholder="Search">
+</div>
+</div>
+<div class="navbar-center">
+<ul>
+<li><a href="#" class="active-link"><img src="images/home.png"><span> Home</span></a></li>
+<li><a href="#"><img src="images/network.png"><span> My Network</span></a></li>
+<li><a href="#"><img src="images/jobs.png"><span> Jobs</span></a></li>
+<li><a href="#"><img src="images/message.png"><span> Messaging</span></a></li>
+<li><a href="#"><img src="images/notification.png"><span> Notifications</span></a></li>
+</ul>
+</div>
+<div class="navbar-right">
+<div class="online">
+<img src="images/user-1.png" class="nav-profile-img" onclick="togglemenu()">
+</div>
+</div>
+
+<!--profile drop down menu-->
+
+<div class="profile-menu-wrap" id="profilemenu">
+<div class="profile-menu">
+    <div class="user-info">
+        <img src="images/user-1.png">
+        <div>
+            <h3>Bindu Vijayan</h3>
+            <a href="profile.html">see your profile</a>
+        </div>
+    </div>
+    <hr>
+    <a href="#" class="profile-menu-link">
+        <img src="images/feedback.png">
+        <p>Give feedback</p>
+        <span>></span>
+    </a>    
+    <a href="#" class="profile-menu-link">
+        <img src="images/setting.png">
+        <p>Settings & privacy</p>
+        <span>></span>
+    </a>    
+    <a href="#" class="profile-menu-link">
+        <img src="images/help.png">
+        <p>Help & support</p>
+        <span>></span>
+    </a>    
+    <a href="#" class="profile-menu-link">
+        <img src="images/display.png">
+        <p>Display & Accessiblity</p>
+        <span>></span>
+    </a> 
+    <a href="#" class="profile-menu-link">
+        <img src="images/logout.png">
+        <p>Logout</p>
+        <span>></span>
+    </a>       
+</div>
+</div>
+</nav>
+
+<!------navbarclosed------>
+<div class="container">
+<!------leftside------>
+    <div class="left-sidebar">
+        <div class="sidebar-profile-box">
+            <img src="images/cover-pic.png" width="100%">
+            <div class="sidebar-profile-info">
+            <img src="images/user-1.png">
+            <h1>Bindu Vijayan</h1>
+            <h3>web developer </h3>
+            <ul>
+                <li>who's viewed your profile <span>58</span></li>
+                <li>Impressions of your post<span>467</span></li>
+            </ul>
+            </div>
+            <div class="sidebar-profile-link">
+            <a href="#"><img src="images/items.png">My  items</a>
+            <a href="#"><img src="images/premium.png">Try premium</a>
+            </div>
+        </div>
+
+
+        <div class="sidebar-activity" id="sidebarActivity">
+            <h3>RECENT</h3>
+            <a href="#"><img src="images/recent.png">web development</a>
+            <a href="#"><img src="images/recent.png">Frontend developer</a>
+            <a href="#"><img src="images/recent.png">python developer</a>
+            <a href="#"><img src="images/recent.png">Full stack</a>
+            <a href="#"><img src="images/recent.png">software testing</a>
+            <a href="#"><img src="images/recent.png">Php full stack</a>
+            <h3>GROUPS</h3>
+            <a href="#"><img src="images/group.png">web  Design group</a>
+            <a href="#"><img src="images/group.png">html & css learners</a>
+            <a href="#"><img src="images/group.png">Frontend developer</a>
+            <a href="#"><img src="images/group.png">python developer</a>
+            <h3>HASHTAG</h3>
+            <a href="#"><img src="images/hashtag.png">web development</a>
+            <a href="#"><img src="images/hashtag.png">user interface</a>
+            <a href="#"><img src="images/hashtag.png">online learning</a>
+            <div class="discover-more-link">
+            <a href="#">Discover more</a>
+            </div>
+        </div>
+        <p id="showMoreLink" onclick="toggleActivity()">show more<b>+</b></p>
+    </div>
+
+    <!--main-->
+    <div class="main-content">
+
+        <div class="create-post">
+        <div class="create-post-input">
+            <img src="images/user-1.png">
+            <textarea rows="2" placeholder="write a post"></textarea>
+        </div>
+        <div class="create-post-links">
+            <li><img src="images/photo.png">Photo</li>
+            <li><img src="images/video.png">Video</li>
+            <li><img src="images/event.png">Event</li>
+            <li>Post</li>
+        </div>
+        </div>
+
+        <div class="sort-by">
+            <hr>
+            <p> sort by:<span>top <img src="images/down-arrow.png"></span></p>
+        </div>
+        
+        <div class="post">
+            <div class="post-author">
+                <img src="images/user-3.png">
+                <div>
+                    <h1>Benjamin leo</h1>
+                    <small>Founder and CEO at Gellelo Group | Angel Investor</small>
+                    <SMall>2 hours ago</SMall>
+                </div>
+            </div>
+
+            <p>In the world of effective leadership, good managers stand out as champions of not just immediate success, but long-term development.
+
+                These remarkable individuals understand that their role goes beyond managing tasks; it involves nurturing the potential of their employees, guiding them towards professional growth.
+            </p>
+            <img src="images/post-image-1.png" width="100%">
+
+            <div class="post-status">
+                <div>
+                    <img src="images/thumbsup.png">
+                    <img src="images/love.png">
+                    <img src="images/clap.png">
+                    <span class="liked-user">Abhinav mishra and 275 others</span>
+                </div>
+                <div>
+                <span> 22 coments &middot; 40 shares</span>
+                </div>
+            </div>
+            <div class="post-activity">
+                <div> 
+                <img src="images/user-1.png" class="post-activity-user-icon">
+                <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                </div>
+                <div class="post-activity-link">
+                <img src="images/like.png">
+                <span>like</span>
+                </div>
+                <div class="post-activity-link">
+                <img src="images/comment.png">
+                <span>comment</span>
+                </div>
+                <div class="post-activity-link">
+                <img src="images/share.png">
+                <span>share</span>
+                </div>
+                <div class="post-activity-link">
+                <img src="images/send.png">
+                <span>send</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="post-author">
+                <img src="images/user-2.png">
+                <div>
+                    <h1>Adam danyal</h1>
+                    <small>follow for leadership content</small>
+                    <SMall>18 hours ago</SMall>
+                </div>
+            </div>
+
+            <p>Unlock your potential in the booming Gaming market with our Master Certificate in Game Design Online course. 𝐍𝐨 𝐂𝐨𝐝𝐢𝐧𝐠 𝐁𝐚𝐜𝐤𝐠𝐫𝐨𝐮𝐧𝐝 𝐍𝐞𝐞𝐝𝐞𝐝.<br>
+
+                Develop your own Multi player Game portfolio.
+                Industry Showcase.
+                Become an Unreal Engine visualizer.
+                Learn real-time visualization strategy.
+                Create realistic visual presentations in linear content/games.
+                Create photorealistic renders inside Unreal Engine.
+                
+            </p>
+            <img src="images/post-image-2.png" width="100%">
+
+            <div class="post-status">
+                <div>
+                    <img src="images/thumbsup.png">
+                    <img src="images/love.png">
+                    <img src="images/clap.png">
+                    <span class="liked-user">Ajinav and 183 others</span>
+                </div>
+                <div>
+                <span> 16 coments &middot; 32 shares</span>
+                </div>
+            </div>
+            <div class="post-activity">
+                <div> 
+                <img src="images/user-1.png" class="post-activity-user-icon">
+                <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                </div>
+                <div class="post-activity-link">
+                <img src="images/like.png">
+                <span>like</span>
+                </div>
+                <div class="post-activity-link">
+                <img src="images/comment.png">
+                <span>comment</span>
+                </div>
+                <div class="post-activity-link">
+                <img src="images/share.png">
+                <span>share</span>
+                </div>
+                <div class="post-activity-link">
+                <img src="images/send.png">
+                <span>send</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="post-author">
+                <img src="images/user-4.png">
+                <div>
+                    <h1>Nimisha R</h1>
+                    <small>Python intern at zoop</small>
+                    <SMall>3d ago</SMall>
+                </div>
+            </div>
+
+            <p>Innovation is the fuel that propels engineering forward. It's about discovering new ways of doing things, making processes more efficient, and constantly pushing the boundaries of what is possible. Innovation leads to game-changing inventions, such as the Internet, electric cars, and renewable energy sources.<br><br>
+
+                As we look ahead, the importance of creativity and innovation in engineering will only grow. The challenges we face, from climate change to global health crises, require imaginative solutions. Engineers will play a pivotal role in designing sustainable infrastructure, developing clean energy solutions, and addressing the complex problems of our time.
+            </p>
+            <img src="images/post-image-3.png" width="100%">
+
+            <div class="post-status">
+                <div>
+                    <img src="images/thumbsup.png">
+                    <img src="images/love.png">
+                    <img src="images/clap.png">
+                    <span class="liked-user">shilpa and 420 others</span>
+                </div>
+                <div>
+                <span> 16 coments &middot; 3 shares</span>
+                </div>
+            </div>
+            <div class="post-activity">
+                <div> 
+                <img src="images/user-1.png" class="post-activity-user-icon">
+                <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                </div>
+                <div class="post-activity-link">
+                <img src="images/like.png">
+                <span>like</span>
+                </div>
+                <div class="post-activity-link">
+                <img src="images/comment.png">
+                <span>comment</span>
+                </div>
+                <div class="post-activity-link">
+                <img src="images/share.png">
+                <span>share</span>
+                </div>
+                <div class="post-activity-link">
+                <img src="images/send.png">
+                <span>send</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="post-author">
+                <img src="images/user-5.png">
+                <div>
+                    <h1>Abhishek chawda</h1>
+                    <small>Data scientist & Analyst</small>
+                    <SMall>5 d ago</SMall>
+                </div>
+            </div>
+
+            <p>Engineering has long been associated with precision, logical thinking, and problem-solving. It's a field where math and science rule the day. However, there's another critical aspect of engineering that often goes underappreciated: creativity and innovation.<BR>
+
+                Creativity is often thought of as the realm of artists, writers, and musicians, but it is equally crucial in engineering. At its core, engineering is about finding novel solutions to complex problems. This requires thinking beyond established norms and pushing boundaries.
+            </p>
+            <img src="images/post-image-4.png" width="100%">
+
+            <div class="post-status">
+                <div>
+                    <img src="images/thumbsup.png">
+                    <img src="images/love.png">
+                    <img src="images/clap.png">
+                    <span class="liked-user">Biju and 240 others</span>
+                </div>
+                <div>
+                <span>  8 coments &middot; 3 shares</span>
+                </div>
+            </div>
+            <div class="post-activity">
+                <div> 
+                <img src="images/user-1.png" class="post-activity-user-icon">
+                <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                </div>
+                <div class="post-activity-link">
+                <img src="images/like.png">
+                <span>like</span>
+                </div>
+                <div class="post-activity-link">
+                <img src="images/comment.png">
+                <span>comment</span>
+                </div>
+                <div class="post-activity-link">
+                <img src="images/share.png">
+                <span>share</span>
+                </div>
+                <div class="post-activity-link">
+                <img src="images/send.png">
+                <span>send</span>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <!--right-->
+    <div class="right-sidebar">
+        <div class="sidebar-news">
+            <img src="images/more.png" class="info-icon">
+            <h3> Trending News</h3>
+            <a href="#">high demand for skilled manpower</a>
+            <span>1d ago &middot;10,934 readers</span>
+
+            <a href="#">careers growing horizontally too</a>
+            <span>19h ago &middot;1552 readers</span>
+
+            <a href="#">less work visa for US , more for UK</a>
+            <span>1d ago &middot;27,290 readers</span>
+        
+            <a href="#">more hihiring = higher confidence?</a>
+            <span>18h ago &middot;8,208 readers</span>
+
+            <a href="#">gautam adani is the world's third richest</a>
+            <span>12h ago &middot;4205 readers</span>
+
+
+            <a href="#" class="read-more-link">Read More</a>
+        </div>
+
+        <div class="sidebar-ad">
+        <small>Ad</small>
+        <p> Master the 5 priciples of web design</p>
+        <div>
+            <img src="images/user-1.png">
+            <img src="images/mi-logo.png">
+        </div>
+        <b>Brand and Demand in Xiaomi</b>
+        <a href="#" class="ad-link">Learn more</a>
+        </div>
+
+        <div class="side-useful-links">
+            <a href="#">About</a>
+            <a href="#">Accessiblity</a>
+            <a href="#">Help center </a>
+            <a href="#">Privacy policy</a>
+            <a href="#">Advertising</a>
+            <a href="#">Get the App</a>
+            <a href="#">More</a>
+
+        <div class="copyright-msg">
+            <img src="images/logo.png">
+            <p> Linkedup &#169; 2022.All right reserved</p>
+        </div>
+
+        </div>
+    </div>
+
+
+
+
+
+</div>
+<script>
+let profilemenu = document.getElementById("profilemenu");
+
+function togglemenu(){
+    profilemenu.classList.toggle("open-menu");
+}
+</script>
+
+<script>
+    
+    let sideActivity = document.getElementById("sidebarActivity");
+    let moreLink = document.getElementById("showMoreLink");
+
+    function toggleActivity(){
+        sideActivity.classList.toggle("open-activity");
+        if(sideActivity.classList.contains("open-activity")){
+            moreLink.innerHTML ="show Less<b>-</b>";
+        }
+        else{
+            moreLink.innerHTML ="show more<b>+</b>";
+        }
+    }
+</script>
+</body>
+</html>
